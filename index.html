@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
@@ -15,43 +19,47 @@
     <nav id="nav_design" class="NavD">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#header_design">Home</a>
+
         <a href="#about">About Me</a>
-        <a href="#experience">Experiences</a>
+        <a href="#experience">Experience &amp; Education</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact Me</a>
     </nav>
+    <span style="font-size: 60px; padding: 15px;" class="nav_arrow" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-    <header id="header_design">
-        <div class="starry">
-            <div class="container">
-
-                <h1 style="font-size: 50px">Gabriel Echue</h1>
-                <p style="font-size: 25px">(Front-End Developer)</p>
-                <p style="font-size: 25px">Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. - Rajanand</p>
-
-                <a href="#about"><i style="font-size: 65px; margin-top: 50px;" class="fa fa-arrow-circle-down fa-4x "></i></a>
-
-            </div>
-        </div>
-    </header>
-    <span style="font-size: 45px;" class="nav_arrow" onclick="openNav()"><i class="fa fa-bars"></i></span>
     <div id="main">
+        <header id="header_design">
+            <div class="starry">
+                <div class="container">
+                    <div class="p p-1"></div>
+                    <div class="p p-2"></div>
+                    <div class="floattext Aicon" style="padding: 150px 0px;">
+                        <h1 style="font-size: 80px">Gabriel Echue</h1>
+                        <p style="font-size: 30px">(Front-End Developer)</p>
+                        <a href="#about"><i style="font-size: 65px; margin-top: 50px;" class="fa fa-arrow-circle-down fa-4x "></i></a>
+                    </div>
+                    <div class="p p-3"></div>
+                    <div class="p p-4"></div>
+                    <div class="p p-5"> </div>
+                    <div class="p p-6"></div>
+                    <div class="p p-7"></div>
+                </div>
+            </div>
+        </header>
 
         <section id="about">
             <div class="head">
                 <h2>About Me</h2>
             </div>
             <div class="container">
-
                 <div class="paraSize">
                     <p style="font-weight: bold">
                         You ready to Console.Read()?</p>
                     <p>Being born of Nigerian descent, technology and I came together like glue, despite both of my parents relationship with technology being that of water and oil. </p>
                     <p>From secondary school in 2012 to the end of my second college in 2019 I have worked with software in terms of interacting with different programming languages such as HTML5, CSS3, Javascript, C#, Python, etc. Strengthening my fundementals of binary with machine code. Designing, analysing and implementing code (following the lifecycle models) and generally trying to improve myself in all areas of life. </p>
                     <p>Knowing the joys and frustrations of software development I have developed a nature of being tenacious and logical - breaking down problems into steps in order to reach a efficient solution. Combined with my easy-going nature and ability to socialise and communicate with others, I hope to maximise my potential within a company to benefit not just myself but the people that rely on me aswell. </p>
-                    <p>Thanks for reading;</p>
-                    <p style="font-weight: bold">break;</p>
-                    <img src="images/program_joke.jpg" alt="Program Joke">
+                    <p>The Motto I always live by:</p>
+                    <img style="border: 5px solid white;" src="images/program_joke.jpg" alt="Program Joke">
                 </div>
 
 
@@ -60,30 +68,44 @@
 
         <section id="experience">
             <div class="head">
-                <h2>Experience</h2>
+                <h2>Experience &amp; Education</h2>
             </div>
             <div class="container">
-                <ul class="timeline">
-                    <li>
-                        <h1> Went into Just IT Software Development Course (August 12th 2019 - Current)</h1>
-                    </li>
-                    <li>
-                        <h1>Worked in employment as Casino Team Member - Morden Cashino (February 12 2019 - March 27th 2019)</h1>
-                    </li>
-                    <li>
-                        <h1>Completed ICT Level 3 BTEC South Thames College (September 2018 - July 2019)</h1>
-                    </li>
+                <!--- This div should float to the left -->
+                <div class="ExEleft">
+                   <h1><u>Experience</u></h1>
+                    <ul class="timeline">
+                        <li>
+                            <h3> Went into Just IT Software Development Course <i>(August 12th 2019 - Current)</i></h3>
+                        </li>
+                        <li>
+                            <h3>Worked in employment as Casino Team Member - Morden Cashino <i>(February 12 2019 - March 27th 2019)</i></h3>
+                        </li>
 
-                    <li>
-                        <h1>Worked in employment as Warehouse Assistant - Warehouse School Uniform Direct (July 1 2018 - Sept 12 2018) </h1>
-                    </li>
-                    <li>
-                        <h1>Completed A-Levels - Saint Francis Xavier (September 2016 - July 2018)</h1>
-                    </li>
-                    <li>
-                        <h1>Completed GCSES - Norwood School (September 2016 - July 2016)</h1>
-                    </li>
-                </ul>
+
+                        <li>
+                            <h3>Worked in employment as Warehouse Assistant - Warehouse School Uniform Direct <i>(July 1 2018 - Sept 12 2018) </i></h3>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--- This div should float to the right -->
+                <div class="ExEright">
+                   <h1><u>Education</u></h1>
+                    <ul class="timeline">
+                        <li>
+                            <h3>Completed ICT Level 3 BTEC South Thames College <i>(September 2018 - July 2019)</i></h3>
+                        </li>
+                        <li>
+                            <h3>Completed A-Levels - Saint Francis Xavier <i>(September 2016 - July 2018)</i></h3>
+                        </li>
+
+                        <li>
+                            <h3>Completed GCSES - Norwood School <i>(September 2016 - July 2016)</i></h3>
+                        </li>
+
+                    </ul>
+                </div>
 
             </div>
         </section>
@@ -102,40 +124,16 @@
 
         <section id="contact">
             <div class="head">
-                <h2>Contact Details</h2>
+                <h2>Contact Me</h2>
             </div>
             <div class="container">
-                <br>
-                <fieldset style="display: inline-block"  class="contact_detail">
-                    <legend><Strong>Contact Details</Strong></legend>
-                    <form action="mailto:gechue123@gmail.com" method="post" enctype="text/plain">
-                        <label>Name:</label>
-                        <input type="text" name="name" required>
-                        <br>
+                <div class="icons">
+                    <a href="mailto: gechue123@gmail.com"> <span><i class="fa fa-envelope"></i></span></a>
+                    <a href="https://github.com/GJoker123" target="_blank"> <span><i class="fa fa-github"></i></span></a>
 
-                        <label>Email:</label>
+                    <a href="https://www.linkedin.com/in/gabriel-echue-24a301196/" target="_blank"> <span><i class="fa fa-linkedin"></i></span></a>
 
-                        <input type="text" name="email" required>
-                        <br>
-                        <br>
-                        <label>Message: </label>
-                        <textarea name="message"></textarea>
-                        <br>
-                        <br>
-                        <input type="submit" value="Submit" class="btn">
-                    </form>
-                    <br>
-                    <address style="font-weight: bold">
-                        Email: <a href="mailto:gechue123@gmail.com.uk">gechue123@gmail.com.uk</a> <br>
-                        
-                    </address>
-                </fieldset>
-                <div style="font-size: 25px;">
-                    <span><i style="font-size: 50px" class="fa fa-github"></i> Check out my <a href="https://github.com/GJoker123">Github!</a></span>
-                    <br>
-                    <span><i style="font-size: 50px" class="fa fa-linkedin"></i> Check out my <a href="https://www.linkedin.com/in/gabriel-echue-24a301196/">LinkedIn!</a></span>
-                    <br>
-                    <span><i style="font-size: 50px" class="fa fa-user"></i>Check out my <a href="" > CV!</a></span>
+                    <a href="" target="_blank"> <span><i class="fa fa-user"></i></span></a>
                 </div>
 
             </div>
@@ -145,11 +143,7 @@
             <p><strong> Designed by Gabriel &copy; </strong></p>
         </footer>
     </div> <!-- Hold the id for div "main" -->
-    <div class="starry" style="height: 40vh; background-position: bottom;">
-        <div class="container">
-            <a href="#header_design"><i style="font-size: 65px; margin-top: 90px;" class="fa fa-arrow-circle-up fa-4x "></i></a>
-        </div>
-    </div>
+
 
 </body>
 <script>

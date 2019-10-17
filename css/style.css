@@ -6,8 +6,8 @@ body {
 
 #main {
     transition: margin-left 0.5s;
-    
 }
+
 .container {
     width: 80%;
     margin: auto;
@@ -20,6 +20,7 @@ body {
     display: flex;
     color: #ffff;
 
+
 }
 
 #header_design p,
@@ -28,9 +29,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 20px;
-
-
 }
+
+
 
 .NavD {
     height: 100%;
@@ -43,13 +44,13 @@ body {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
-    
+
 }
 
 .NavD a {
-    padding: 8px 8px 8px 32px;
+    padding: 18px 8px 18px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -68,13 +69,14 @@ body {
 }
 
 
-.nav_arrow{
+.nav_arrow {
     position: fixed;
     top: 0;
     color: #ffff;
     visibility: visible;
 }
-.nav_arrow i:hover{
+
+.nav_arrow i:hover {
     color: #f5cf45;
     transition: 0.5s;
 }
@@ -82,29 +84,28 @@ body {
 
 .head {
     background-color: #000;
-    color: #ffff;
     text-align: center;
-
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .head h2 {
-    border: 2px solid white;
+    font-size: 30px;
     display: inline-block;
-    padding: 5px;
+    background: -webkit-linear-gradient(#ffff, #8d8f91, #ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .paraSize {
     font-size: 1.5em;
-    color: #ffff;
+    color: #000;
 
 }
 
 
-
-
-
 .starry {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(80, 30, 80, 0.8)), url(../images/nathan-anderson-ohx4v80mJm8-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/alexander-andrews-fsH1KjbdjE8-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -114,7 +115,24 @@ body {
 
 }
 
+#experience {
+    display: flex;
+    flex-direction: column;
+}
 
+.ExEleft {
+    float: left;
+    display: inline-block;
+    width: 50%;
+
+
+}
+
+.ExEright {
+    float: right;
+    display: inline-block;
+    width: 50%;
+}
 
 #projects_display {
     background-image: linear-gradient(#000, #ffff);
@@ -128,10 +146,34 @@ body {
     padding: 20px;
 
 }
+.Aicon a{
+    color: white
+}
 
-.contact_detail{
-    float: left;
-    font-size: 1.2em;
+.Aicon a:hover {
+    transition: 0.5s;
+    color: #e1b137;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons i {
+    padding: 50px;
+    font-size: 100px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icons a:hover {
+    transform: translate(0px, -10px);
+    transition: 0.5s;
+    color: #e1b137;
 }
 
 footer {
