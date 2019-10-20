@@ -4,10 +4,12 @@ body {
 
 }
 
+/* Used in conjection with Nav to push content to the side (disabled currently)
+*/
 #main {
     transition: margin-left 0.5s;
 }
-
+/* Gives 80% of the width space to hold content in */
 .container {
     width: 80%;
     margin: auto;
@@ -15,7 +17,8 @@ body {
     text-align: center;
     margin-bottom: 10px
 }
-
+/* HOME ID */
+/* CSS for page header and nav */
 #header_design {
     display: flex;
     color: #ffff;
@@ -30,9 +33,18 @@ body {
     -webkit-text-fill-color: transparent;
     padding: 20px;
 }
+/* Used for Parallax scrolling and to hold image in center and top of screen */
+.starry {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/alexander-andrews-fsH1KjbdjE8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
 
-
-
+}
+/* Used to design Sidebar Navigation */
 .NavD {
     height: 100%;
     width: 0;
@@ -74,14 +86,17 @@ body {
     top: 0;
     color: #ffff;
     visibility: visible;
+    font-size: 60px;
+    padding: 15px;
 }
+
 
 .nav_arrow i:hover {
     color: #f5cf45;
     transition: 0.5s;
 }
 
-
+/* Used to design the sub-headings of the portfolio */
 .head {
     background-color: #000;
     text-align: center;
@@ -90,36 +105,56 @@ body {
 }
 
 .head h2 {
-    font-size: 30px;
+    font-size: 2rem;
     display: inline-block;
     background: -webkit-linear-gradient(#ffff, #8d8f91, #ffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+
+
+/* Icon of arrow at top of page */
+.Aicon {
+    padding: 150px 0px;
+}
+
+.Aicon h1 {
+    font-size: 80px;
+}
+
+.Aicon p {
+    font-size: 30px;
+}
+
+.Aicon i {
+    font-size: 65px;
+    margin-top: 50px;
+}
+
+.Aicon a {
+    color: white
+}
+
+.Aicon a:hover {
+    transition: 0.5s;
+    color: #e1b137;
+}
+
+/* ABOUT ME ID */
 .paraSize {
     font-size: 1.5em;
     color: #000;
 
 }
 
-
-.starry {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/alexander-andrews-fsH1KjbdjE8-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-
-}
-
+/* EXPERIENCE ID */
 #experience {
     display: flex;
     flex-direction: column;
 }
 
+/* CSS for Showing off the "Experience" Section */
 .ExEleft {
     float: left;
     display: inline-block;
@@ -128,12 +163,16 @@ body {
 
 }
 
+/* CSS for Showing off the "Education" Section */
 .ExEright {
     float: right;
     display: inline-block;
     width: 50%;
+
 }
 
+/* PROJECT ID */
+/* CSS to dispaly projects */
 #projects_display {
     background-image: linear-gradient(#000, #ffff);
     display: flex;
@@ -146,14 +185,10 @@ body {
     padding: 20px;
 
 }
-.Aicon a{
-    color: white
-}
 
-.Aicon a:hover {
-    transition: 0.5s;
-    color: #e1b137;
-}
+
+/* CONTACT ID */
+/* Icons for contacting me - github, linkedin, etc */
 .icons {
     display: flex;
     justify-content: center;
@@ -162,7 +197,9 @@ body {
 
 .icons i {
     padding: 50px;
-    font-size: 100px;
+    margin: 30px 50px;
+    width: 25%;
+    font-size: 6rem;
 }
 
 .icons a {
@@ -176,21 +213,114 @@ body {
     color: #e1b137;
 }
 
+/* Footer Information and CSS */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #000;
     color: #ffff;
 
 
 }
 
+/* Media query to adjust height of navigation*/
 @media screen and (max-height: 450px) {
     .NavD {
         padding-top: 15px;
+
     }
 
     .NavD a {
         font-size: 18px;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE PHONES */
+@media only screen and (max-width: 768px) {
+    * {
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+
+    .p {
+        display: none;
+    }
+
+    .head h2 {
+        font-size: 1rem;
+    }
+
+    .icons i {
+        font-size: 1.5rem;
+        padding: 5px;
+        margin: 15px
+    }
+
+    .paraSize img {
+        width: 50%;
+    }
+
+    .Aicon {
+        padding: 90px 0px;
+
+    }
+
+    .Aicon i {
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+
+    .Aicon h1 {
+        font-size: 2.5rem;
+    }
+
+    .Aicon p {
+        font-size: 1.5rem;
+    }
+
+    .NavD a {
+        padding: 8px 8px 16px;
+        font-size: 18px;
+
+    }
+
+    .NavD .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .nav_arrow {
+        font-size: 1.5rem;
+    }
+
+
+    p {
+        font-size: 0.7em;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+
+}
+
+/* MEDIA QUERIES FOR TABLETS AND PADS */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .icons i {
+        font-size: 5rem;
+        padding: 30px;
+        margin: 30px
     }
 }
