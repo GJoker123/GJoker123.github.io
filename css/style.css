@@ -1,326 +1,215 @@
 body {
-    background-image: linear-gradient(#000, #ffff);
-    margin: 0px;
+    background-image: linear-gradient(black, black, darkred);
+    color: #ff4d4d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
 
 }
 
-/* Used in conjection with Nav to push content to the side (disabled currently)
-*/
-#main {
-    transition: margin-left 0.5s;
+p {
+    font-size: 1.5rem;
+
 }
-/* Gives 80% of the width space to hold content in */
+
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
     text-align: center;
-    margin-bottom: 10px
+
 }
-/* HOME ID */
-/* CSS for page header and nav */
-#header_design {
-    display: flex;
+.wrapper{
+    text-align: center;
+}
+.eye {
+    height: 250px;
+    width: 40%;
+    display: inline-block;    
+}
+
+.link a {
+    text-decoration: none;
+    color: #ff4d4d;
+
+}
+
+.link a:first-child:hover {
     color: #ffff;
 
-
+    transition: 0.5s;
 }
 
-#header_design p,
-#header_design h1 {
-    background: -webkit-linear-gradient(#ffff, #8d8f91, #ffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 20px;
+.link a:last-child:hover {
+    color: #ff1a1a;
+    transition: 0.5s;
 }
-/* Used for Parallax scrolling and to hold image in center and top of screen */
-.starry {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/alexander-andrews-fsH1KjbdjE8-unsplash.jpg);
+
+.HorrBox{
+    background-color: black;
+    color: darkred;
+    border: 2px dotted grey;
+    float: right;
+    font-size: 20px;
+}
+
+#intro{}
+#audio_control{}
+#display{
+    padding-top: 80px;
+    color: darksalmon;
+    width: 60%; 
+}
+
+#display p{
+    font-size: 1.2em;
+   
+}
+.fade1 p{
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.fade2 p{
+    animation-name: fadeoutV2;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    opacity: 1;
+}
+#HList {
+    background-color: black;
+    color: darkred;
+    border: 2px dotted grey;
+    float: left; 
+    font-size: 20px;
+}
+#HInput{}
+
+
+
+
+#blood_rain {
+    background-image: url(../images/joel-filipe-rG1LNUFgJhI-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    width: 100%;
     height: 100vh;
 
 }
-/* Used to design Sidebar Navigation */
-.NavD {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
 
-}
-
-.NavD a {
-    padding: 18px 8px 18px 32px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.NavD a:hover {
-    color: #f5cf45;
-}
-
-.NavD .closebtn {
+#game_area {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 0;
 }
 
-
-.nav_arrow {
-    position: fixed;
-    top: 0;
-    color: #ffff;
-    visibility: visible;
-    font-size: 60px;
-    padding: 15px;
+#gamescript{
+    
 }
 
-
-.nav_arrow i:hover {
-    color: #f5cf45;
-    transition: 0.5s;
+@keyframes fadeoutV2{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
 
-/* Used to design the sub-headings of the portfolio */
-.head {
-    background-color: #000;
-    text-align: center;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
-
-.head h2 {
-    font-size: 2rem;
-    display: inline-block;
-    background: -webkit-linear-gradient(#ffff, #8d8f91, #ffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-
-/* Icon of arrow at top of page */
-.Aicon {
-    padding: 150px 0px;
-}
-
-.Aicon h1 {
-    font-size: 80px;
-}
-
-.Aicon p {
-    font-size: 30px;
-}
-
-.Aicon i {
-    font-size: 65px;
-    margin-top: 50px;
-}
-
-.Aicon a {
-    color: white
-}
-
-.Aicon a:hover {
-    transition: 0.5s;
-    color: #e1b137;
-}
-
-/* ABOUT ME ID */
-.paraSize {
-    font-size: 1.5em;
-    color: #000;
-
-}
-
-/* EXPERIENCE ID */
-#experience {
-    display: flex;
-    flex-direction: column;
-}
-
-/* CSS for Showing off the "Experience" Section */
-.ExEleft {
-    float: left;
-    display: inline-block;
-    width: 50%;
-
-
-}
-
-/* CSS for Showing off the "Education" Section */
-.ExEright {
-    float: right;
-    display: inline-block;
-    width: 50%;
-
-}
-
-/* PROJECT ID */
-/* CSS to dispaly projects */
-#projects_display {
-    background-image: linear-gradient(#000, #ffff);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#projects_display img {
-    width: 20%;
-    padding: 20px;
-
-}
-
-
-/* CONTACT ID */
-/* Icons for contacting me - github, linkedin, etc */
-.icons {
-    display: flex;
-    justify-content: center;
-
-}
-
-.icons i {
-    padding: 50px;
-    margin: 30px 50px;
-    width: 25%;
-    font-size: 6rem;
-}
-
-.icons a {
-    text-decoration: none;
-    color: #000;
-}
-
-.icons a:hover {
-    transform: translate(0px, -10px);
-    transition: 0.5s;
-    color: #e1b137;
-}
-
-/* Footer Information and CSS */
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #000;
-    color: #ffff;
-
-
-}
-
-/* Media query to adjust height of navigation*/
-@media screen and (max-height: 450px) {
-    .NavD {
-        padding-top: 15px;
-
-    }
-
-    .NavD a {
-        font-size: 18px;
+@keyframes fadeout {
+    50% {
+        opacity: 1;
     }
 }
 
-/* MEDIA QUERIES FOR MOBILE PHONES */
-@media only screen and (max-width: 768px) {
-    * {
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
     }
 
-    .p {
-        display: none;
+    100% {
+        opacity: 1;
     }
-
-    .head h2 {
-        font-size: 1rem;
-    }
-
-    .icons i {
-        font-size: 1.5rem;
-        padding: 5px;
-        margin: 15px
-    }
-
-    .paraSize img {
-        width: 50%;
-    }
-
-    .Aicon {
-        padding: 90px 0px;
-
-    }
-
-    .Aicon i {
-        font-size: 3rem;
-        margin-top: 10px;
-    }
-
-    .Aicon h1 {
-        font-size: 2.5rem;
-    }
-
-    .Aicon p {
-        font-size: 1.5rem;
-    }
-
-    .NavD a {
-        padding: 8px 8px 16px;
-        font-size: 18px;
-
-    }
-
-    .NavD .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    .nav_arrow {
-        font-size: 1.5rem;
-    }
-
-
-    p {
-        font-size: 0.7em;
-    }
-
-    h3 {
-        font-size: 0.8em;
-    }
-
-    h1 {
-        font-size: 15px;
-    }
-
-
 }
 
-/* MEDIA QUERIES FOR TABLETS AND PADS */
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+#zero {
+    animation-name: fadeout;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    opacity: 0;
+}
 
-    .icons i {
-        font-size: 5rem;
-        padding: 30px;
-        margin: 30px
-    }
+#one {
+    animation-name: fadeout;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-duration: 10s;
+    opacity: 0;
+}
+
+#two {
+    animation-name: fadeout;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    animation-duration: 10s;
+    opacity: 0;
+}
+
+#three {
+    animation-name: fadeout;
+    animation-fill-mode: forwards;
+    animation-delay: 16s;
+    animation-duration: 10s;
+    opacity: 0;
+}
+
+#four {
+    animation-name: fadeout;
+    animation-fill-mode: forwards;
+    animation-delay: 24s;
+    animation-duration: 10s;
+    opacity: 0;
+}
+
+#five {
+    animation-name: fadeout;
+    animation-fill-mode: forwards;
+    animation-delay: 30s;
+    animation-duration: 10s;
+    opacity: 0;
+}
+
+#six {
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-delay: 36s;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+#seven {
+    animation-name: fadeout;
+    animation-fill-mode: forwards;
+    animation-delay: 38s;
+    animation-duration: 10s;
+    opacity: 0;
+}
+
+#eight {
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-delay: 40s;
+    animation-duration: 10s;
+    opacity: 0;
 }
