@@ -15,7 +15,7 @@ function openNav(x) {
         document.getElementById("nav_design").style.width = "150px";
         document.getElementById("main").style.marginLeft = "0px";
     } else {
-        document.getElementById("nav_design").style.width = "250px";
+        document.getElementById("nav_design").style.width = "190px";
         document.getElementById("main").style.marginLeft = "0px";
     }
 
