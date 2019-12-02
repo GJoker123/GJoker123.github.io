@@ -172,7 +172,7 @@ body {
 }
 
 /* PROJECT ID */
-/* CSS to dispaly projects */
+/* CSS to display projects */
 #projects_display {
     background-image: linear-gradient(#000, #ffff);
     display: flex;
@@ -181,11 +181,15 @@ body {
 }
 
 #projects_display img {
-    width: 15%;
-    padding: 20px;
+    width: 250px;
+    height: auto;
+    padding: 20px;   
     
 }
 
+#projects_display a {
+    margin: 15px;
+}
 
 /* CONTACT ID */
 /* Icons for contacting me - github, linkedin, etc */
@@ -311,7 +315,16 @@ footer {
     h1 {
         font-size: 15px;
     }
-
+    #projects_display img {
+    width: 60px;
+    height: auto;
+    padding: 10px;   
+    
+}
+    #projects_display a {
+    margin: 5px;   
+    
+}
 
 }
 
@@ -323,4 +336,14 @@ footer {
         padding: 30px;
         margin: 30px
     }
+    #projects_display img {
+    width: 150px;
+    height: auto;
+    padding: 20px;   
+    
+}
+    #projects_display a {
+    margin: 15px;   
+    
+}
 }
