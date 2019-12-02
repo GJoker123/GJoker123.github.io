@@ -54,19 +54,7 @@ body {
     left: 0;
     background-color: #000;
     overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     padding-top: 30px;
-=======
-    padding-top: 60px;
->>>>>>> parent of f029e80... the-crypt
-=======
-    padding-top: 60px;
->>>>>>> parent of cb9e85d... Merge pull request #1 from GJoker123/GJoker123-patch-1
-=======
-    padding-top: 60px;
->>>>>>> parent of cb9e85d... Merge pull request #1 from GJoker123/GJoker123-patch-1
     transition: 0.5s;
 
 }
@@ -74,19 +62,7 @@ body {
 .NavD a {
     padding: 18px 8px 18px 32px;
     text-decoration: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     font-size: 25px;
-=======
-    font-size: 36px;
->>>>>>> parent of f029e80... the-crypt
-=======
-    font-size: 36px;
->>>>>>> parent of cb9e85d... Merge pull request #1 from GJoker123/GJoker123-patch-1
-=======
-    font-size: 36px;
->>>>>>> parent of cb9e85d... Merge pull request #1 from GJoker123/GJoker123-patch-1
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -205,27 +181,9 @@ body {
 }
 
 #projects_display img {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     width: 15%;
     padding: 20px;
     
-=======
-    width: 20%;
-    padding: 20px;
-
->>>>>>> parent of f029e80... the-crypt
-=======
-    width: 20%;
-    padding: 20px;
-
->>>>>>> parent of cb9e85d... Merge pull request #1 from GJoker123/GJoker123-patch-1
-=======
-    width: 20%;
-    padding: 20px;
-
->>>>>>> parent of cb9e85d... Merge pull request #1 from GJoker123/GJoker123-patch-1
 }
 
 
