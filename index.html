@@ -3,148 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-
-
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stars.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/jscript.js"></script>
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>G's Portfolio</title>
+    <title>Entrance</title>
 </head>
 
 <body>
-    <nav id="nav_design" class="NavD">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#header_design">Home</a>
+    <audio id="intro" loop src="audio/Echoes%20of%20Time.mp3" >
+    </audio>
+    <header id="head">
+        <span style="font-size: 65px;"><i id="audio_control" class="fa fa-play" onclick="playsong()"></i></span>
+        <div  class="container">
+            
+            <h1 id="zero">I have a Question for you.</h1>
+            <h1 id="six"><strong>THE CRYPT</strong></h1>
+        </div>
+    </header>
 
-        <a href="#about">About Me</a>
-        <a href="#experience">Experience &amp; Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
-    <span class="nav_arrow" onclick="openNav(x)"><i class="fa fa-bars"></i></span>
-
-    <div id="main">
-        <header id="header_design">
-            <div class="starry">
-                <div class="container">
-                    <div class="p p-1"></div>
-                    <div class="p p-2"></div>
-                    <div class="floattext Aicon">
-                        <h1>Gabriel Echue</h1>
-                        <p>(Front-End Developer)</p>
-                        <a href="#about"><i class="fa fa-arrow-circle-down fa-4x "></i></a>
-                    </div>
-                    <div class="p p-3"></div>
-                    <div class="p p-4"></div>
-                    <div class="p p-5"> </div>
-                    <div class="p p-6"></div>
-                    <div class="p p-7"></div>
-                </div>
+    <section id="sect">
+        <div class="container">
+            <p id="one"> Do you find yourself to be <strong><span style="color: #ffff">blessed?</span></strong></p>
+              <p id="two"> Or do you find yourself to be <strong><span style="color: red">cursed?</span></strong></p>
+            <p id="three"><strong>Regardless of your answer...</strong> To come here is to step into the unknown. To be taken somewhere... <strong>Unique.</strong> </p>
+            <p id="four">Welcome to a new world. An adventure. A to-<strong>die for</strong>-experience.</p>
+            <p id="five">Welcome to...</p>          
+            <p id="seven"><strong>Wake the left eye to <span style="color: #ffff">ascend</span>, or wake the right eye to <span style="color:  darkred">descend</span> .</strong></p>
+           <!-- <p style="font-size: 15px; display: inline-block; " class="fade">IF YOU DARE...</p> -->    
+                <div  class="eye">
+                 <img style="margin: 10px; float: left" id="eyechange2" src="images/closed_eye_for_crypt.png" alt="Closed Eye Game" onclick="eye2()">        
             </div>
-        </header>
-
-        <section id="about">
-            <div class="head">
-                <h2>About Me</h2>
+            <div class="eye" >   
+                <img style="margin: 10px; float: right" id="eyechange" src="images/closed_eye_for_crypt.png" alt="Closed Eye Library" onclick="eye()">    
             </div>
-            <div class="container">
-                <div class="paraSize">
-                    <p style="font-weight: bold">
-                        You ready to Console.Read()?</p>
-                    <p>Being born of Nigerian descent, technology and I came together like glue, despite both of my parents relationship with technology being that of water and oil. </p>
-                    <p>From secondary school in 2012 to the end of my second college in 2019 I have worked with software in terms of interacting with different programming languages such as HTML5, CSS3, Javascript, C#, Python, etc. Strengthening my fundementals of binary with machine code. Designing, analysing and implementing code (following the lifecycle models) and generally trying to improve myself in all areas of life. </p>
-                    <p>Knowing the joys and frustrations of software development I have developed a nature of being tenacious and logical - breaking down problems into steps in order to reach a efficient solution. Combined with my easy-going nature and ability to socialise and communicate with others, I hope to maximise my potential within a company to benefit not just myself but the people that rely on me aswell. </p>
-                    <p>The Motto I always live by:</p>
-                    <img style="border: 5px solid white;" src="images/program_joke.jpg" alt="Program Joke">
-                </div>
+        
+          
+        </div>
+    </section>
+    
+     
 
-
-            </div>
-        </section>
-
-        <section id="experience">
-            <div class="head">
-                <h2>Experience &amp; Education</h2>
-            </div>
-            <div class="container">
-                <!--- This div should float to the left -->
-                <div class="ExEleft">
-                    <h1><u>Experience</u></h1>
-                    <ul class="timeline">
-                        <li>
-                            <h3>Went into Just IT Software Development Course <i>(August 12th 2019 - Current)</i></h3>
-                        </li>
-                        <li>
-                            <h3>Worked in employment as Casino Team Member - Morden Cashino <i>(February 12 2019 - March 27th 2019)</i></h3>
-                        </li>
-
-
-                        <li>
-                            <h3>Worked in employment as Warehouse Assistant - Warehouse School Uniform Direct <i>(July 1 2018 - Sept 12 2018) </i></h3>
-                        </li>
-
-                    </ul>
-                </div>
-                <!--- This div should float to the right -->
-                <div class="ExEright">
-                    <h1><u>Education</u></h1>
-                    <ul class="timeline">
-                        <li>
-                            <h3>Completed ICT Level 3 BTEC South Thames College <i>(September 2018 - July 2019)</i></h3>
-                        </li>
-                        
-                        <li>
-                            <h3>Completed A-Levels - Saint Francis Xavier <i>(September 2016 - July 2018)</i></h3>
-                        </li>
-
-                        <li>
-                            <h3>Completed GCSES - Norwood School <i>(September 2016 - July 2016)</i></h3>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="head">
-                <h2>Projects</h2>
-            </div>
-
-            <div id="projects_display">
-                <img src="images/image-placeholder-icon-15.jpg" alt="image placeholder">
-                <img src="images/image-placeholder-icon-15.jpg" alt="image placeholder">
-                <img src="images/image-placeholder-icon-15.jpg" alt="image placeholder">
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="head">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="container">
-                <div class="icons">
-                    <a href="mailto: gechue123@gmail.com"> <i class="fa fa-envelope"></i></a>
-                    <a href="https://github.com/GJoker123" target="_blank"> <i class="fa fa-github"></i></a>
-
-                    <a href="https://www.linkedin.com/in/gabriel-echue-24a301196/" target="_blank"> <i class="fa fa-linkedin"></i></a>
-
-                    <a href="" target="_blank"> <i class="fa fa-user"></i></a>
-                </div>
-
-            </div>
-        </section>
-
-        <footer>
-            <p><strong> Designed by Gabriel &copy; </strong></p>
-        </footer>
-    </div> <!-- Hold the id for div "main" -->
-
-
+    <script src="javascript/eye.js"></script>
 </body></html>
