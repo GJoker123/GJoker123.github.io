@@ -1,0 +1,55 @@
+.col-md-5 {
+    width: 41.66666667%;
+  }
+  
+  .our-skills .progress-bar {
+    line-height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+
+.our-skills .progress-bar {
+    line-height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.progress-bar-danger {
+    background-color: #d9534f;
+}
+
+.our-skills .progress-bar {
+    line-height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+
+.progress-bar-warning {
+    background-color: #f0ad4e; }
+    
+.our-skills .progress-bar {
+    line-height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.progress-bar-info {
+    background-color: #5bc0de;
+}
+
+.our-skills .progress {
+    height: 36px;
+}

@@ -3,20 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-
-
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <!--<link rel="stylesheet" href="css/stars.css"> -->
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/jscript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
+
+
+    <!-- Custom fonts for this template -->
+    <link href="css/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>G's Portfolio</title>
 </head>
 
 <body>
+
     <nav id="nav_design" class="NavD">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#header_design">Home</a>
@@ -35,6 +45,7 @@
                     <div class="p p-1"></div>
                     <div class="p p-2"></div>
                     <div class="floattext Aicon">
+                        <img class="rounded-circle" src="images/profile2edited.jpg" alt="Profile Picture">
                         <h1>Gabriel Echue</h1>
                         <p>(Front-End Developer)</p>
                         <a href="#about"><i class="fa fa-arrow-circle-down fa-4x "></i></a>
@@ -66,49 +77,63 @@
 
             </div>
         </section>
-
+        <!--<section class="our-skills" id="skills">
+            <div class="head">
+                <h2>My Skills</h2>
+            </div>
+            <div class="container">
+                <p>HTML : Intermediate</p>
+                <p>CSS : Fluent</p>
+                <p>Bootstrap : Beginner</p>
+                <p>React : Beginner</p>
+                <p>Javascript : Intermediate</p>              
+                <p>Python : Intermediate</p>
+                <p>C# : Intermediate</p>
+                <p>Visual Basic : Intermediate</p>
+            </div>
+        </section> -->
         <section id="experience">
             <div class="head">
                 <h2>Experience &amp; Education</h2>
             </div>
             <div class="container">
-                <!--- This div should float to the left -->
-                <div class="ExEleft">
-                    <h1><u>Experience</u></h1>
-                    <ul class="timeline">
-                        <li>
-                            <h3>Went into Just IT Software Development Course <i>(August 12th 2019 - Current)</i></h3>
-                        </li>
-                        <li>
-                            <h3>Worked in employment as Casino Team Member - Morden Cashino <i>(February 12 2019 - March 27th 2019)</i></h3>
-                        </li>
+                <div>
 
+                    <!--- This div should float to the left -->
+                    <div class="ExEleft">
+                        <h1><u>Experience</u></h1>
+                        <ul class="timeline">
+                            <li>
+                                <h3>Went into Just IT Software Development Course <i>(August 12th 2019 - Current)</i></h3>
+                            </li>
+                            <li>
+                                <h3>Worked in employment as Casino Team Member - Morden Cashino <i>(February 12 2019 - March 27th 2019)</i></h3>
+                            </li>
+                            <li>
+                                <h3>Worked in employment as Warehouse Assistant - Warehouse School Uniform Direct <i>(July 1 2018 - Sept 12 2018) </i></h3>
+                            </li>
 
-                        <li>
-                            <h3>Worked in employment as Warehouse Assistant - Warehouse School Uniform Direct <i>(July 1 2018 - Sept 12 2018) </i></h3>
-                        </li>
+                        </ul>
+                    </div>
+                    <!--- This div should float to the right -->
+                    <div class="ExEright">
+                        <h1><u>Education</u></h1>
+                        <ul class="timeline">
+                            <li>
+                                <h3>Completed ICT Level 3 BTEC South Thames College <i>(September 2018 - July 2019)</i></h3>
+                            </li>
 
-                    </ul>
+                            <li>
+                                <h3>Completed A-Levels - Saint Francis Xavier <i>(September 2016 - July 2018)</i></h3>
+                            </li>
+
+                            <li>
+                                <h3>Completed GCSES - Norwood School <i>(September 2016 - July 2016)</i></h3>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-                <!--- This div should float to the right -->
-                <div class="ExEright">
-                    <h1><u>Education</u></h1>
-                    <ul class="timeline">
-                        <li>
-                            <h3>Completed ICT Level 3 BTEC South Thames College <i>(September 2018 - July 2019)</i></h3>
-                        </li>
-                        
-                        <li>
-                            <h3>Completed A-Levels - Saint Francis Xavier <i>(September 2016 - July 2018)</i></h3>
-                        </li>
-
-                        <li>
-                            <h3>Completed GCSES - Norwood School <i>(September 2016 - July 2016)</i></h3>
-                        </li>
-
-                    </ul>
-                </div>
-
             </div>
         </section>
 
@@ -116,12 +141,76 @@
             <div class="head">
                 <h2>Projects</h2>
             </div>
+            <!-- Project Grid -->
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row bordered">
 
-            <div id="projects_display">
-                <a  href="https://gjoker123.github.io/the-crypt/" target="_blank"><img src="images/the_crypt.jpg" alt="the crypt placeholder"></a>
-                <!--<a href="http://ggabe123-001-site1.atempurl.com/"><img src="images/game_store_profile.jpg" target="_blank" alt="game store placeholder"> </a>
-                <a target="_blank" href="https://gjoker123.github.io/zoo-project/publish.htm" ><img src="images/zoo_profile.jpg" alt="zoo project placeholder"></a> -->
-            </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a onclick="loadproject(this);" data-value="1" class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="images/opened_eye_profile.jpg" alt="The Crypt Project">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>The Crypt</h4>
+                                <p class="text-muted">Explore the Unknown...</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a onclick="loadproject(this);" data-value="2" class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="images/encrypt_profile.jpg" alt="Encrypt and Decrypt Project">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Encrypt &#38; Decrypt </h4>
+                                <p class="text-muted">Break or Make a code!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a onclick="loadproject(this);" data-value="3" class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="images/WrittenWork.jpg" alt="G's Library Project">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Written Works of G</h4>
+                                <p class="text-muted">Ready to step into the Library of G?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a onclick="loadproject(this);" data-value="4" class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="images/game_store_profile.jpg" alt="G's Game Store">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>G's Gaming Store</h4>
+                                <p class="text-muted">Become a member of the Game Store!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p style="text-align: center; font-weight: bold;">Click on a project's image to learn more information about that project.</p>
+            </section>
         </section>
 
         <section id="contact">
@@ -132,19 +221,62 @@
                 <div class="icons">
                     <a href="mailto: gechue123@gmail.com"> <i class="fa fa-envelope"></i></a>
                     <a href="https://github.com/GJoker123" target="_blank"> <i class="fa fa-github"></i></a>
-
                     <a href="https://www.linkedin.com/in/gabriel-echue-24a301196/" target="_blank"> <i class="fa fa-linkedin"></i></a>
-
-                    <a href="" target="_blank"> <i class="fa fa-user"></i></a>
                 </div>
-
             </div>
         </section>
 
         <footer>
             <p><strong> Designed by Gabriel &copy; </strong></p>
         </footer>
-    </div> <!-- Hold the id for div "main" -->
+
+        <!-- Hold the id for div "main" -->
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Modal  -->
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 id="displayname" class="text-uppercase"></h2>
+                                <p class="item-intro text-muted"></p>
+                                <img style="height: 40vh; width: auto;" id="displayimg" class="img-fluid d-block mx-auto" src="" alt="">
+                                <p style="font-size: 20px;" id="displaycontent"></p>
+                                <a id="displaylink" target="_blank" href=""><button style="font-size: 20px;" class="btn btn-primary" type="button">
+                                        <!--<i class="fa fa-times"></i> -->
+                                        Demo</button></a>
+                                <button button style="font-size: 20px;" class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-</body></html>
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/agency.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="js/jscript.js"></script></html>

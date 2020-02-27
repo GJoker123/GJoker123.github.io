@@ -1,7 +1,10 @@
 body {
     background-image: linear-gradient(#000, #ffff);
     margin: 0px;
-
+    /*font-family: 'Open Sans', sans-serif; */
+    /*font-family: 'Martel Sans', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
 }
 
 /* Used in conjection with Nav to push content to the side (disabled currently)
@@ -9,6 +12,7 @@ body {
 #main {
     transition: margin-left 0.5s;
 }
+
 /* Gives 80% of the width space to hold content in */
 .container {
     width: 80%;
@@ -17,6 +21,7 @@ body {
     text-align: center;
     margin-bottom: 10px
 }
+
 /* HOME ID */
 /* CSS for page header and nav */
 #header_design {
@@ -26,16 +31,31 @@ body {
 
 }
 
+.bordered img{
+    border: 2px solid #fff;
+}
+.rounded {
+  border-radius: 0.25rem !important;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+    width: 15%;
+    
+}
+.rounded-sm {
+  border-radius: 0.2rem !important;
+}
 #header_design p,
 #header_design h1 {
     background: -webkit-linear-gradient(#ffff, #8d8f91, #ffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 20px;
+    padding-bottom: 5px;
 }
+
 /* Used for Parallax scrolling and to hold image in center and top of screen */
 .starry {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/alexander-andrews-fsH1KjbdjE8-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/alexander-andrews-fsH1KjbdjE8-unsplash-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,6 +64,7 @@ body {
     height: 100vh;
 
 }
+
 /* Used to design Sidebar Navigation */
 .NavD {
     height: 100%;
@@ -148,28 +169,6 @@ body {
 
 }
 
-/* EXPERIENCE ID */
-#experience {
-    display: flex;
-    flex-direction: column;
-}
-
-/* CSS for Showing off the "Experience" Section */
-.ExEleft {
-    float: left;
-    display: inline-block;
-    width: 50%;
-
-
-}
-
-/* CSS for Showing off the "Education" Section */
-.ExEright {
-    float: right;
-    display: inline-block;
-    width: 50%;
-
-}
 
 /* PROJECT ID */
 /* CSS to display projects */
@@ -180,16 +179,72 @@ body {
     justify-content: center;
 }
 
-#projects_display img {
+
+
+.projectbtns {
+    border: 0px;
     width: 250px;
-    height: auto;
-    padding: 20px;   
-    
+    height: 250px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-#projects_display a {
-    margin: 15px;
+
+
+#projects_display a {   
+    text-decoration: none;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 /* CONTACT ID */
 /* Icons for contacting me - github, linkedin, etc */
@@ -315,16 +370,15 @@ footer {
     h1 {
         font-size: 15px;
     }
-    #projects_display img {
-    width: 60px;
-    height: auto;
-    padding: 10px;   
+
+    #projects img {
+        width: 200px;
+        height: auto;
+        
+
+    }
+
     
-}
-    #projects_display a {
-    margin: 5px;   
-    
-}
 
 }
 
@@ -336,14 +390,16 @@ footer {
         padding: 30px;
         margin: 30px
     }
+
     #projects_display img {
-    width: 150px;
-    height: auto;
-    padding: 20px;   
-    
-}
+        width: 150px;
+        height: auto;
+        padding: 20px;
+
+    }
+
     #projects_display a {
-    margin: 15px;   
-    
-}
+        margin: 15px;
+
+    }
 }

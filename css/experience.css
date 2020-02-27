@@ -23,8 +23,40 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 0;
 }
+/* EXPERIENCE ID */
+#experience {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS for Showing off the "Experience" Section */
+.ExEleft {
+    float: left;
+    display: inline-block;
+    width: 50%;
+
+
+}
+
+/* CSS for Showing off the "Education" Section */
+.ExEright {
+    float: right;
+    display: inline-block;
+    width: 50%;
+
+}
+
 /* changes size of circles based on width (smaller for mobiles) */
 @media only screen and (max-width: 768px) {
+    .ExEright{
+        width: 100%;
+        float: none;
+    }
+    
+    .ExEleft {
+    float: none;   
+    width: 100%;
+    }
     ul.timeline > li:before {
         content: ' ';
         background: #FFD700;
@@ -33,8 +65,8 @@ ul.timeline > li:before {
         border-radius: 50%;
         border: 2px solid #000;
         left: 10px;
-        width: 10px;
-        height: 10px;
+        width: 20px;
+        height: 20px;
         z-index: 0;
     }
 
