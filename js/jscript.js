@@ -52,12 +52,20 @@ function loadproject(objdata) {
             document.getElementById("displaylink").href = "https://gjoker123.github.io/LibraryofG/";
             document.getElementById("displaycontent").innerHTML = "The Written Works Of G is a library that contains stories and writings of different styles and genres. This website was designed to showcase the strength of bootstrap. Also is connected to The Crypt and Encrypt Projects."
             break;
+
         case "4":
             document.getElementById("displayname").innerHTML = "G's Game Store";
             document.getElementById("displayimg").src = "images/game_store_profile.jpg";
             document.getElementById("displayimg").alt = "G's Game Store Project";
             document.getElementById("displaylink").href = "http://ggabe123-001-site1.atempurl.com/";
             document.getElementById("displaycontent").innerHTML = "G's Game Store is a website designed to utilise the capabilites of front-end and back-end development. Designed using C# and ASP.Net, the website provides and stores data via a database."
+            break;
+        case "5":
+            document.getElementById("displayname").innerHTML = "Pixel.JS Demo Game";
+            document.getElementById("displayimg").src = "images/pixeljs_game_demo.jpg";
+            document.getElementById("displayimg").alt = "Pixel.Js Game";
+            document.getElementById("displaylink").href = "https://gjoker123.github.io/DemoPixel/";
+            document.getElementById("displaycontent").innerHTML = "A simple game demo made by using a combination of Pixel.JS and Bootstrap. Will be developed further on in the future. Instructions are included on the website."
             break;
     }
 
