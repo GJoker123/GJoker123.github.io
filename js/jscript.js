@@ -67,6 +67,14 @@ function loadproject(objdata) {
             document.getElementById("displaylink").href = "https://gjoker123.github.io/DemoPixel/";
             document.getElementById("displaycontent").innerHTML = "A simple game demo made by using a combination of Pixel.JS and Bootstrap. Will be developed further on in the future. Instructions are included on the website."
             break;
+
+        case "6":
+            document.getElementById("displayname").innerHTML = "EPG Church";
+            document.getElementById("displayimg").src = "images/Website%20thumbnail.png";
+            document.getElementById("displayimg").alt = "EPG Church";
+            document.getElementById("displaylink").href = "https://gjoker123.github.io/EPGCHURCH/";
+            document.getElementById("displaycontent").innerHTML = "Personal Website designed for a close relative of mine who is also a pastor. Feel free to check out!"
+            break;
     }
 
 }
