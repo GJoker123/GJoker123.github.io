@@ -32,20 +32,24 @@ body {
 
 }
 
-.bordered img{
+.bordered img {
     border: 2px solid #fff;
 }
+
 .rounded {
-  border-radius: 0.25rem !important;
+    border-radius: 0.25rem !important;
 }
+
 .rounded-circle {
-  border-radius: 50% !important;
+    border-radius: 50% !important;
     width: 15%;
-    
+
 }
+
 .rounded-sm {
-  border-radius: 0.2rem !important;
+    border-radius: 0.2rem !important;
 }
+
 #header_design p,
 #header_design h1 {
     background: -webkit-linear-gradient(#ffff, #8d8f91, #ffff);
@@ -180,7 +184,10 @@ body {
     justify-content: center;
 }
 
+#projects img {
+    margin: 10px;
 
+}
 
 .projectbtns {
     border: 0px;
@@ -193,9 +200,19 @@ body {
 
 
 
-#projects_display a {   
+#projects_display a {
     text-decoration: none;
 }
+
+#displayname{}
+
+#displayimg{}
+#displaycontent{}
+
+#displayname{
+    font-size: 1rem;
+}
+
 
 
 
@@ -268,7 +285,7 @@ footer {
     }
 
     .icons i {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         padding: 5px;
         margin: 15px
     }
@@ -327,18 +344,49 @@ footer {
     }
 
     #projects img {
-        width: 200px;
+        width: 400px;
         height: auto;
-        
+        margin: 10px;
+
+    }
+    
+    #displaycontent{
+    font-size: 0.9rem
+}
+
+    .rounded-circle {
+        width: 100px;
+    }
+
+    #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+        background: rgba(0, 0, 0, 0);
+    }
+
+
+
+    .modal-body {
+        position: relative;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 0.5rem;
+        background-color: #fff;
+        font-size: 0.5rem;
 
     }
 
-    
+
+    #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+        opacity: 0;
+    }
 
 }
 
 /* MEDIA QUERIES FOR TABLETS AND PADS */
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .rounded-circle {
+        width: 100px;
+    }
 
     .icons i {
         font-size: 5rem;
@@ -357,4 +405,45 @@ footer {
         margin: 15px;
 
     }
+
+    #projects img {
+        width: 400px;
+        height: auto;
+
+
+    }
+
+    .rounded-circle {
+        width: 200px;
+    }
+
+    .Aicon i {
+        font-size: 5rem;
+    }
+
+
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #portfolio .portfolio-item .portfolio-caption {
+        margin: 0px 10px;
+    }
+
+    @media only screen and (max-width: 768px) and (max-height: 1024px) {
+
+        .rounded-circle {
+            width: 200px;
+        }
+
+        .icons i {
+            font-size: 5rem;
+            padding: 30px;
+            margin: 30px
+        }
+
+        .Aicon i {
+            font-size: 5rem;
+        }
+
+
+    }
